@@ -6,14 +6,14 @@ A reusable AI assistant engine for Obsidian vaults.
 ## 🏗️ Architecture (Hub & Spoke)
 This project consists of three distinct repositories:
 1.  **Infrastructure (This Repo):** Reusable logic and configuration.
-2.  **Assistant Data (`assistant/`):** Private Obsidian vault (User data).
+2.  **Data Vault (`data_vault/`):** Private Obsidian vault (User data).
 3.  **Dev Process (`meta/`):** Private session history and planning.
 
 ### 🔗 Directory Structure
 - `/` (Infrastructure Root)
-- `/assistant/` (Vault - Separately versioned)
+- `/data_vault/` (Vault - Separately versioned)
 - `/meta/` (Dev Process - Separately versioned, symlinked into vault)
-- `/assistant/_utils/` (Core scripts and templates)
+- `/data_vault/_utils/` (Core scripts and templates)
     - `_dataview_scripts/`: Specialized DataviewJS for unified content views.
     - `_templates/`: Core note templates (Journal, Atlas, Logs).
 
